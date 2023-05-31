@@ -215,14 +215,15 @@
                 </div>
             </section>
 
-
             <section class="steps section container" id="appkentang">
                 <div class="steps__bg">
                     <h2 class="section__title-center steps__title">
                         Deteksi Penyakit <br> Daun Tanaman Kentang
                     </h2>
+                
                         <div class="steps__card">
-                            <div class="explore-content">
+                        <div class="row">
+                            <div class="col">
                                     <h1 class="steps__card-title">Let's start detection!!</h1>
                                 <div class="line"></div>
                                     <img src={{ url_for('static', filename='/img/8.png') }} alt="" width="200">
@@ -230,7 +231,8 @@
                                     <p><input type="file" id="input_gambar" name="file"></p>
                                     <br>
                                     <button type="submit" id="prediksi_submit" class="button button--flex">Prediksi</button>
-
+                            </div>
+                            <div class="col">
                                     <div class="hasilprediksi">
                                     <br>
                                     <!-- Bagian Halaman untuk Hasil Prediksi -->
@@ -239,6 +241,7 @@
                                         </div>
                                     </div>
                             </div>
+                        </div>
                         </div>
                 </div>
             </section>
