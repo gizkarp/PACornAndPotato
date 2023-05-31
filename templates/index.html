@@ -23,7 +23,7 @@
         <header class="header" id="header">
             <nav class="nav container">
                 <a href="#" class="nav__logo">
-                    <i class="ri-leaf-line nav__logo-icon"></i> Leaf
+                    <i class="ri-leaf-line nav__logo-icon"></i> PotatoCorn Detect
                 </a>
 
                 <div class="nav__menu" id="nav-menu">
@@ -32,19 +32,19 @@
                             <a href="#home" class="nav__link active-link">Home</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#about" class="nav__link">Description</a>
+                            <a href="#appkentang" class="nav__link">Application</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#appjagung" class="nav__link">Application</a>
+                            <a href="#kentang" class="nav__link">Leaf Disease</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#products" class="nav__link">Information</a>
+                            <a href="#about" class="nav__link">Tips</a>
                         </li>
                         <li class="nav__item">
                             <a href="#faqs" class="nav__link">FAQs</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#contact" class="nav__link">Kelompok</a>
+                            <a href="#contact" class="nav__link">Team</a>
                         </li>
                     </ul>
 
@@ -72,21 +72,21 @@
 
                     <div class="home__data">
                         <h1 class="home__title" style="font-size: 50px;">
-                            Deteksi Penyakit Daun Tanaman Jagung & Kentang
+                            Deteksi Penyakit Daun Tanaman Kentang & Jagung
                         </h1>
                         <p class="home__description" style="font-size: 15px; text-align: justify;">
-                            Deteksi penyakit daun tanaman jagung dan kentang
+                            Deteksi penyakit daun tanaman kentang dan jagung
                             adalah proses mengidentifikasi penyakit atau kerusakan pada daun tanaman 
                             yang dapat membantu petani mengambil tindakan yang tepat untuk 
                             mencegah penyebaran penyakit dan merawat tanaman dengan lebih efektif.
                         </p>
-                        <a href="#appjagung" class="button button--flex">
-                            Jagung <i class="ri-arrow-right-down-line button__icon"></i>
+                        <a href="#appkentang" class="button button--flex">
+                            Kentang <i class="ri-arrow-right-down-line button__icon"></i>
                         </a>
 
 
-                        <a href="#appkentang" class="button button--flex">
-                            Kentang <i class="ri-arrow-right-down-line button__icon"></i>
+                        <a href="#appjagung" class="button button--flex">
+                            Jagung <i class="ri-arrow-right-down-line button__icon"></i>
                         </a>
                     </div>
 
@@ -108,88 +108,42 @@
                 </div>
             </section>
 
-            <!--==================== ABOUT ====================-->
-            <section class="about section container" id="about">
-                        <h2 class="section__title-center">
-                            Bagaimana Menjaga Kesehatan <br> Tanaman Jagung dan Kentang? 
-                        </h2>
+            <!--==================== APLIKASI ====================-->
 
-                        <p class="product__description">
-                            Menjaga kesehatan tanaman jagung dan kentang sangatlah penting untuk mencapai 
-                            hasil panen yang optimal dan menjaga keberlanjutan produksi pertanian.
-                        </p>
-                        <br>
-                <div class="about__container grid">
-                    <img src={{ url_for('static', filename='/img/Corn1.png') }} alt="" class="about__img">
-                    
-                    <img src={{ url_for('static', filename='/img/Potato1.png') }} alt="" class="about__img">
-
-                    <div class="about__data">
-                        <h2 class="section__title about__title" style="font-size: var(--h3-font-size)">
-                            Tips-Tips Untuk Menjaga Kesehatan Tanaman Jagung
-                        </h2>
-
-                        <div class="about__details" style="font-size: var(--small-font-size); text-align: justify;">
-                            <p class="about__details-description">
-                                <i class="ri-checkbox-fill about__details-icon"></i>
-                                Pilih varietas jagung yang tahan terhadap penyakit daun 
-                                seperti grey leaf spot, common rust, dan northern corn leaf blight.
-                            </p>
-                            <p class="about__details-description">
-                                <i class="ri-checkbox-fill about__details-icon"></i>
-                                Lakukan rotasi tanaman dengan tanaman non-serealia untuk mengurangi 
-                                risiko penyebaran patogen penyakit.
-                            </p>
-                            <p class="about__details-description">
-                                <i class="ri-checkbox-fill about__details-icon"></i>
-                                Hapus dan buang sisa-sisa tanaman yang terinfeksi, termasuk 
-                                daun-daun yang jatuh, untuk mengurangi sumber penularan penyakit.
-                            </p>
-                            <p class="about__details-description">
-                                <i class="ri-checkbox-fill about__details-icon"></i>
-                                Hindari irigasi berlebihan dan jaga kelembaban tanah yang seimbang 
-                                untuk mengurangi kondisi yang menguntungkan bagi patogen.
-                            </p>
+            <section class="steps section container" id="appkentang">
+                <div class="steps__bg">
+                    <h2 class="section__title-center steps__title">
+                        Deteksi Penyakit <br> Daun Tanaman Kentang
+                    </h2>
+                
+                        <div class="steps__card">
+                        <div class="row">
+                            <div class="col">
+                                    <h1 class="steps__card-title">Let's start detection!!</h1>
+                                <div class="line"></div>
+                                    <img src={{ url_for('static', filename='/img/8.png') }} alt="" width="200">
+                                    <p class="steps__card-description" style="font-size: medium;">Silahkan Masukkan Gambar</p>
+                                    <p><input type="file" id="input_gambar" name="file"></p>
+                                    <br>
+                                    <button type="submit" id="prediksi_submit" class="button button--flex">Prediksi</button>
+                            </div>
+                            <div class="col" style="margin-right: 80px;">
+                                    <div class="hasilprediksi">
+                                    <br>
+                                    <!-- Bagian Halaman untuk Hasil Prediksi -->
+                                        <div class="steps__card-title" id="hasil_prediksi" align="center">
+                                    <!-- Hasil Prediksi akan ditampilkan di sini-->
+                                        </div>
+                                    </div>
+                                    <a href="#kentang" class="button button--flex">
+                                        Pelajari lebih lanjut <i class="ri-arrow-right-down-line button__icon"></i>
+                                    </a>
+                            </div>
                         </div>
-
-                        
-                    </div>
-
-                    <div class="about__data">
-                        <h2 class="section__title about__title" style="font-size: var(--h3-font-size)">
-                            Tips-Tips Untuk Menjaga Kesehatan Tanaman Kentang
-                        </h2>
-
-                        <div class="about__details" style="font-size: var(--small-font-size); text-align: justify;">
-                            <p class="about__details-description">
-                                <i class="ri-checkbox-fill about__details-icon"></i>
-                                Jika risiko serangan penyakit tinggi, pertimbangkan penggunaan 
-                                fungisida sesuai dengan petunjuk dan dosis yang tepat.
-                            </p>
-                            <p class="about__details-description">
-                                <i class="ri-checkbox-fill about__details-icon"></i>
-                                Lakukan pemangkasan secara teratur untuk meningkatkan sirkulasi udara 
-                                dan mengurangi kelembaban yang dapat menyebabkan perkembangan penyakit.
-                            </p>
-                            <p class="about__details-description">
-                                <i class="ri-checkbox-fill about__details-icon"></i>
-                                Simpan umbi kentang dalam kondisi yang optimal setelah panen untuk mencegah 
-                                infeksi penyakit dan mempertahankan kualitasnya.
-                            </p>
-                            <p class="about__details-description">
-                                <i class="ri-checkbox-fill about__details-icon"></i>
-                                Pertahankan kebersihan tanah dengan pengendalian gulma dan pemupukan yang tepat 
-                                untuk memastikan tanaman kentang mendapatkan nutrisi yang cukup.
-                            </p>
                         </div>
-
-                        
-                    </div>
-
                 </div>
             </section>
 
-            <!--==================== APLIKASI ====================-->
             <section class="steps section container" id="appjagung">
                 <div class="steps__bg">
                     <h2 class="section__title-center steps__title">
@@ -215,39 +169,8 @@
                 </div>
             </section>
 
-            <section class="steps section container" id="appkentang">
-                <div class="steps__bg">
-                    <h2 class="section__title-center steps__title">
-                        Deteksi Penyakit <br> Daun Tanaman Kentang
-                    </h2>
-                
-                        <div class="steps__card">
-                        <div class="row">
-                            <div class="col">
-                                    <h1 class="steps__card-title">Let's start detection!!</h1>
-                                <div class="line"></div>
-                                    <img src={{ url_for('static', filename='/img/8.png') }} alt="" width="200">
-                                    <p class="steps__card-description" style="font-size: medium;">Silahkan Masukkan Gambar</p>
-                                    <p align="center"><input type="file" id="input_gambar" name="file"></p>
-                                    <br>
-                                    <button type="submit" id="prediksi_submit" class="button button--flex">Prediksi</button>
-                            </div>
-                            <div class="col" style="margin-right: 80px;">
-                                    <div class="hasilprediksi">
-                                    <br>
-                                    <!-- Bagian Halaman untuk Hasil Prediksi -->
-                                        <div class="steps__card-title" id="hasil_prediksi" align="center">
-                                    <!-- Hasil Prediksi akan ditampilkan di sini-->
-                                        </div>
-                                    </div>
-                            </div>
-                        </div>
-                        </div>
-                </div>
-            </section>
-
-            <!--==================== INFORMASI ====================-->
-            <section class="product section container" id="products">
+            <!--==================== LEAF DISEASE ====================-->
+            <section class="product section container" id="kentang">
                 <h2 class="section__title-center">
                     Penyakit Daun Pada <br> Tanaman Kentang
                 </h2>
@@ -311,7 +234,7 @@
                 </div>
             </section>
 
-            <section class="product section container" id="products">
+            <section class="product section container" id="jagung">
                 <h2 class="section__title-center">
                     Penyakit Daun Pada <br> Tanaman Jagung
                 </h2>
@@ -389,6 +312,84 @@
                             </a>
                         </button2>
                     </article>
+                </div>
+            </section>
+
+            <!--==================== TIPS ====================-->
+            <section class="about section container" id="about">
+                        <h2 class="section__title-center">
+                            Bagaimana Menjaga Kesehatan <br> Tanaman Kentang dan Jagung? 
+                        </h2>
+
+                        <p class="product__description">
+                            Menjaga kesehatan tanaman kentang dan jagung sangatlah penting untuk mencapai 
+                            hasil panen yang optimal dan menjaga keberlanjutan produksi pertanian.
+                        </p>
+                        <br>
+                <div class="about__container grid">
+                    
+                    <img src={{ url_for('static', filename='/img/Potato1.png') }} alt="" class="about__img">
+                    
+                    <img src={{ url_for('static', filename='/img/Corn1.png') }} alt="" class="about__img">
+                    
+                    <div class="about__data">
+                        <h2 class="section__title about__title" style="font-size: var(--h3-font-size)">
+                            Tips-Tips Untuk Menjaga Kesehatan Tanaman Kentang
+                        </h2>
+
+                        <div class="about__details" style="font-size: var(--small-font-size); text-align: justify;">
+                            <p class="about__details-description">
+                                <i class="ri-checkbox-fill about__details-icon"></i>
+                                Jika risiko serangan penyakit tinggi, pertimbangkan penggunaan 
+                                fungisida sesuai dengan petunjuk dan dosis yang tepat.
+                            </p>
+                            <p class="about__details-description">
+                                <i class="ri-checkbox-fill about__details-icon"></i>
+                                Lakukan pemangkasan secara teratur untuk meningkatkan sirkulasi udara 
+                                dan mengurangi kelembaban yang dapat menyebabkan perkembangan penyakit.
+                            </p>
+                            <p class="about__details-description">
+                                <i class="ri-checkbox-fill about__details-icon"></i>
+                                Simpan umbi kentang dalam kondisi yang optimal setelah panen untuk mencegah 
+                                infeksi penyakit dan mempertahankan kualitasnya.
+                            </p>
+                            <p class="about__details-description">
+                                <i class="ri-checkbox-fill about__details-icon"></i>
+                                Pertahankan kebersihan tanah dengan pengendalian gulma dan pemupukan yang tepat 
+                                untuk memastikan tanaman kentang mendapatkan nutrisi yang cukup.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="about__data">
+                        <h2 class="section__title about__title" style="font-size: var(--h3-font-size)">
+                            Tips-Tips Untuk Menjaga Kesehatan Tanaman Jagung
+                        </h2>
+
+                        <div class="about__details" style="font-size: var(--small-font-size); text-align: justify;">
+                            <p class="about__details-description">
+                                <i class="ri-checkbox-fill about__details-icon"></i>
+                                Pilih varietas jagung yang tahan terhadap penyakit daun 
+                                seperti grey leaf spot, common rust, dan northern corn leaf blight.
+                            </p>
+                            <p class="about__details-description">
+                                <i class="ri-checkbox-fill about__details-icon"></i>
+                                Lakukan rotasi tanaman dengan tanaman non-serealia untuk mengurangi 
+                                risiko penyebaran patogen penyakit.
+                            </p>
+                            <p class="about__details-description">
+                                <i class="ri-checkbox-fill about__details-icon"></i>
+                                Hapus dan buang sisa-sisa tanaman yang terinfeksi, termasuk 
+                                daun-daun yang jatuh, untuk mengurangi sumber penularan penyakit.
+                            </p>
+                            <p class="about__details-description">
+                                <i class="ri-checkbox-fill about__details-icon"></i>
+                                Hindari irigasi berlebihan dan jaga kelembaban tanah yang seimbang 
+                                untuk mengurangi kondisi yang menguntungkan bagi patogen.
+                            </p>
+                        </div>
+                    </div>
+
                 </div>
             </section>
 
