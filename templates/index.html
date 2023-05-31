@@ -222,20 +222,22 @@
                         Deteksi Penyakit <br> Daun Tanaman Kentang
                     </h2>
                         <div class="steps__card">
-                            <h1 class="steps__card-title">Let's start detection!!</h1>
-                            <div class="line"></div>
-                            <img src={{ url_for('static', filename='/img/8.png') }} alt="" width="200">
-                            <p class="steps__card-description" style="font-size: medium;">Silahkan Masukkan Gambar</p>
-                            <p><input type="file" id="input_gambar" name="file"></p>
-                            <br>
-                            <button type="submit" id="prediksi_submit" class="button button--flex">Prediksi</button>
+                            <div class="explore-content">
+                                    <h1 class="steps__card-title">Let's start detection!!</h1>
+                                <div class="line"></div>
+                                    <img src={{ url_for('static', filename='/img/8.png') }} alt="" width="200">
+                                    <p class="steps__card-description" style="font-size: medium;">Silahkan Masukkan Gambar</p>
+                                    <p><input type="file" id="input_gambar" name="file"></p>
+                                    <br>
+                                    <button type="submit" id="prediksi_submit" class="button button--flex">Prediksi</button>
 
-                            <div class="hasilprediksi">
-                                <br>
-                                <!-- Bagian Halaman untuk Hasil Prediksi -->
-                                <div id="hasil_prediksi" align="center">
+                                    <div class="hasilprediksi">
+                                    <br>
+                                    <!-- Bagian Halaman untuk Hasil Prediksi -->
+                                        <div id="hasil_prediksi" align="center">
                                     <!-- Hasil Prediksi akan ditampilkan di sini-->
-                                </div>
+                                        </div>
+                                    </div>
                             </div>
                         </div>
                 </div>
