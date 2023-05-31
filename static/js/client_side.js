@@ -45,7 +45,7 @@ $(document).ready(function(){
 	if(image_prediksi == "(none)") {
 		str += "<h1>Hasil Prediksi </h1>";
 		str += "<br>";
-		str += "<h4>Silahkan masukkan file gambar (.jpg)</h4>";
+		str += "<h4>Silahkan masukkan file gambar (.jpg/.png)</h4>";
 	}
 	else {
 		str += "<h1>Hasil Prediksi </h1>";
