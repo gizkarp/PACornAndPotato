@@ -43,15 +43,15 @@ $(document).ready(function(){
 	var str="";
 	
 	if(image_prediksi == "(none)") {
-		str += "<h3>Hasil Prediksi </h3>";
+		str += "<h1>Hasil Prediksi </h1>";
 		str += "<br>";
 		str += "<h4>Silahkan masukkan file gambar (.jpg)</h4>";
 	}
 	else {
-		str += "<h3>Hasil Prediksi </h3>";
+		str += "<h1>Hasil Prediksi </h1>";
 		str += "<br>";
 		str += "<img src='" + image_prediksi + "' width=\"200\"></img>"
-		str += "<h3>" + data_prediksi + "</h3>";
+		str += "<h1>" + data_prediksi + "</h1>";
 	}
 	$("#hasil_prediksi").html(str);
   }  
