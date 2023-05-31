@@ -1153,4 +1153,12 @@ the website, in dark theme
     margin-top: 5px;
     border-radius: 5px;
   }
+  
+  .explore-content {
+    width: 60%;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
 }
