@@ -118,14 +118,12 @@
                 
                         <div class="steps__card">
                         <div class="row">
-                            <div class="col">
+                            <div class="col" style="margin-left: 80px;">
                                     <h1 class="steps__card-title">Let's start detection!!</h1>
                                 <div class="line"></div>
                                     <img src={{ url_for('static', filename='/img/8.png') }} alt="" width="200">
                                     <p class="steps__card-description" style="font-size: medium;">Silahkan Masukkan Gambar</p>
-                                    <p><input type="file" id="input_gambar" name="file"></p>
-                                    <br>
-                                    <button type="submit" id="prediksi_submit" class="button button--flex">Prediksi</button>
+                                                               
                             </div>
                             <div class="col" style="margin-right: 80px;">
                                     <div class="hasilprediksi">
@@ -136,9 +134,22 @@
                                         </div>
                                     </div>
                             </div>
-                            <a href="#kentang" class="button button--flex">
-                                        Pelajari lebih lanjut <i class="ri-arrow-right-down-line button__icon"></i>
-                                    </a>
+                        </div>
+                        <div class="row">
+                            <div class="col" style="margin-left: 80px;">
+                                <p><input type="file" id="input_gambar" name="file"></p> 
+                                <br>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col" style="margin-left: 130px;">
+                                <button type="submit" id="prediksi_submit" class="button button--flex">Prediksi</button>
+                            </div>
+                            <div class="col" style="margin-right: 60px;">
+                                <a href="#kentang" class="button button--flex">
+                                    Pelajari lebih lanjut <i class="ri-arrow-right-down-line button__icon"></i>
+                                </a>
+                            </div>
                         </div>
                         </div>
                 </div>
@@ -149,22 +160,42 @@
                     <h2 class="section__title-center steps__title">
                         Deteksi Penyakit <br> Daun Tanaman Jagung
                     </h2>
-
+                
                         <div class="steps__card">
-                            <h1 class="steps__card-title">Let's start detection !!</h1>
-                            <div class="line"></div>
-                            <img src={{ url_for('static', filename='/img/12.png') }} alt="" width="200">
-                            <p class="steps__card-description" style="font-size: medium;">Silahkan Masukkan Gambar</p>
-                            <p><input type="file" id="input_gambar_jagung" name="file"></p>
-                            <br>
-                            <button type="submit" id="prediksi_submit_jagung" class="button button--flex">Prediksi</button>
-                        </div>
-                        <div class="hasilprediksi">
-                            <br>
-                            <!-- Bagian Halaman untuk Hasil Prediksi -->
-                            <div id="hasil_prediksi_jagung" align="center">
-                                <!-- Hasil Prediksi akan ditampilkan di sini-->
+                        <div class="row">
+                            <div class="col" style="margin-left: 80px;">
+                                    <h1 class="steps__card-title">Let's start detection!!</h1>
+                                <div class="line"></div>
+                                    <img src={{ url_for('static', filename='/img/12.png') }} alt="" width="200">
+                                    <p class="steps__card-description" style="font-size: medium;">Silahkan Masukkan Gambar</p>
+                                                               
                             </div>
+                            <div class="col" style="margin-right: 80px;">
+                                    <div class="hasilprediksi">
+                                    <br>
+                                    <!-- Bagian Halaman untuk Hasil Prediksi -->
+                                        <div class="steps__card-title" id="hasil_prediksi_jagung" align="center">
+                                    <!-- Hasil Prediksi akan ditampilkan di sini-->
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col" style="margin-left: 80px;">
+                                <p><input type="file" id="input_gambar_jagung" name="file"></p> 
+                                <br>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col" style="margin-left: 130px;">
+                                <button type="submit" id="prediksi_submit_jagung" class="button button--flex">Prediksi</button>
+                            </div>
+                            <div class="col" style="margin-right: 60px;">
+                                <a href="#jagung" class="button button--flex">
+                                    Pelajari lebih lanjut <i class="ri-arrow-right-down-line button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
                         </div>
                 </div>
             </section>
