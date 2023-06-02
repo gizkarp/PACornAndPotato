@@ -6,5 +6,3 @@
 - Gizka Refyana Putri
 - Afni Virda Afniva
 - Ichsan Fajrie Wandhana
-
-![plants website](/preview.png)
